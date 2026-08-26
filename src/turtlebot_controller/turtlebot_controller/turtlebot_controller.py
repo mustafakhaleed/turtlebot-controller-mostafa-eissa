@@ -7,17 +7,7 @@ class CmdVelPublisher(Node):
     def __init__(self):
         super().__init__('cmd_vel_Pub_Handler')
         self.publisher_ = self.create_publisher(Twist, 'cmd_vel', 10)
-        # timer_period = 0.1  # seconds
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
-
-    # def timer_callback(self):
-    #     msg = Twist()
-    #     if msg == "W":
-    #     msg.linear.x = 0.5  # Move forward at 0.5 m/s
-    #     msg.angular.z = 0.0  # No rotation
-    #     self.publisher_.publish(msg)
-    #     self.get_logger().info('Publishing: "%s"' % msg)
-
+        
     def run(self):
         while rclpy.ok():
             msg = Twist()
@@ -57,3 +47,6 @@ def main(args=None):
     finally:
         cmd_vel_publisher.destroy_node()
         rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()

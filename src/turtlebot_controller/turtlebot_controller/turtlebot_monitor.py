@@ -24,3 +24,6 @@ def main(args=None):
     rclpy.spin(cmd_vel_subscriber)
     cmd_vel_subscriber.destroy_node()
     rclpy.shutdown()        
+
+if __name__ == '__main__':
+    main()        
