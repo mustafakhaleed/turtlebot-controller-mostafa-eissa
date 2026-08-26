@@ -140,10 +140,10 @@ When `Q` is entered, the publisher sends an empty `Twist` message (all zeros) to
  
 ## 7. Demo
  
-https://github.com/mustafakhaleed/turtlebot-controller-mostafa-eissa/blob/main/src/turtlebot_controller/Demo_vid/Demo_Moving_Robot.mp4
- 
+<video src="https://raw.githubusercontent.com/mustafakhaleed/turtlebot-controller-mostafa-eissa/main/src/turtlebot_controller/Demo_vid/Demo_Moving_Robot.mp4" controls width="600">
+Your browser does not support the video tag. <a href="https://github.com/mustafakhaleed/turtlebot-controller-mostafa-eissa/blob/main/src/turtlebot_controller/Demo_vid/Demo_Moving_Robot.mp4">View the video here</a>.
+</video>
 Shows both terminals running side by side: keyboard commands entered in the publisher terminal, and the corresponding `linear`/`angular` values received live in the subscriber terminal.
- 
 ---
 
 ## 8. Notes
